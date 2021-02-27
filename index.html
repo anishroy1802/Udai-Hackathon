@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<head>
+<html>
+	<head>
+		<title>Rotten Potatoes</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./skeleton-doc.css" />
 
-</head>
-<body>
-    Hello world!
-</body>
+		<style>
+			h2 {
+				font-family: "Open Sans", sans-serif;
+			}
+			h1 {
+				font-family: "Open Sans", sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h2>Rotten Potatoes</h2>
+		</div>
+
+		<div class="topnav">
+			<center>
+			<div class="search-container">
+					<input id="query"
+						type="text"
+						placeholder="What are you looking for?"
+						name="search"
+					/>
+					<button onclick=getData() type="submit" value="Go">Go</button>
+			</div>
+		</center>
+		</div>
+		<div id="searchResults"></div>
+    <script src="index.js"></script>
+	</body>
+</html>
