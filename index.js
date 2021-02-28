@@ -10,6 +10,7 @@ function getQuery(){
 
 function appendData(data) {
   var searchResults = document.getElementById("searchResults");
+  searchResults.innerHTML = "";
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");
     div.className = "result";
